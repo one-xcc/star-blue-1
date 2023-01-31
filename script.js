@@ -27,12 +27,12 @@ function disableCopy() {
         e.preventDefault();
         e.stopPropagation();
     }
-    document.onkeydown = function(e) {
-        if (e.keyCode === 123) {
-            e.preventDefault();
-            return false;
-        }
-    };
+    // document.onkeydown = function(e) {
+    //     if (e.keyCode === 123) {
+    //         e.preventDefault();
+    //         return false;
+    //     }
+    // };
     document.body.style.userSelect = "none";
     document.body.style.msUserSelect = "none";
     document.body.style.mozUserSelect = "none";
