@@ -7,63 +7,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="wrapper">
-    <div class="container box-effects-1">
+    <div class="container c-effect">
         <div class="side-bar">
             <div class="logo">
-                <h1>StarBlue.One</h1>
+                <img src="images/logo.png" alt="logo">
             </div>
             <div class="nav-bar">
-                <a class="btn">
+                <a href="#orientation" class="btn l-effect">
                     <span class="btn-icon"><i class="uil uil-eye"></i></span>
                     <span class="btn-text">Định hướng</span>
                 </a>
-                <a class="btn">
+                <a href="#leaders" class="btn l-effect">
                     <span class="btn-icon"><i class="uil uil-head-side"></i></span>
                     <span class="btn-text">Lãnh đạo</span>
                 </a>
-                <a class="btn">
+                <a href="#networks" class="btn l-effect">
                     <span class="btn-icon"><i class="uil uil-channel"></i></span>
                     <span class="btn-text">Mạng lưới</span>
                 </a>
-                <a class="btn">
+                <a href="#statistics" class="btn l-effect">
                     <span class="btn-icon"><i class="uil uil-chart-line"></i></span>
                     <span class="btn-text">Thống kê</span>
                 </a>
-                <a class="btn">
+                <a href="#support" class="btn l-effect">
                     <span class="btn-icon"><i class="uil uil-heart-medical"></i></span>
                     <span class="btn-text">Ủng hộ</span>
                 </a>
-                <a class="btn">
+                <a href="#connect" class="btn l-effect">
                     <span class="btn-icon"><i class="uil uil-wifi"></i></span>
                     <span class="btn-text">Kết nối</span>
                 </a>
             </div>
         </div>
         <div class="content">
-            <div id="intro" class="hero">
-                <div id="intro-text">
-                    <h1>Cộng đồng StarBlue</h1>
-                    <h3>Nơi lan tỏa những giá trị</h3>
+            <div id="intro" class="slider r-effect">
+                <div class="slider__inner">
+                    <div class="slider__item" style="background-image: url(images/slider-imgs/chuc-mung-nam-moi-2023.jpg)"></div>
+                    <div class="slider__item" style="background-image: url(https://via.placeholder.com/1000x400)"></div>
                 </div>
-                <img src="images/lucy-cyberpunk-edgerunners.png" alt="hero-img">
             </div>
+
             <div id="orientation" class="section">
                 <h1>Định hướng</h1>
                 <h3>Tầm nhìn & sứ mệnh</h3>
                 <div class="r-container">
                     <div class="sub-container">
                         <div class="des">
-                            <h2>Định hướng là</h2>
-                            <p>This is demo</p>
+                            <div class="para r-effect">
+                                <h2>Xây dựng cộng đồng</h2>
+                                <p>Đây là mục tiêu lâu dài và bền vững, cũng là nền tảng mà Cộng đồng StarBlue hướng tới.
+                                    Cộng đồng mà chúng ta hướng tới là một cộng đồng lành mạnh, ý thức cao cho sứ mạng phát triển
+                                    chung của đất nước.</p>
+                            </div>
+                            <div class="para r-effect">
+                                <h2>Hệ sinh thái toàn diện</h2>
+                                <p>StarBlue hướng tới việc xây dựng một hệ sinh thái cộng đồng toàn diện ở mọi khía cạnh
+                                nhằm thúc đẩy không chỉ kiến thức, tư duy mà còn là không gian giải trí,
+                                    trải nghiệm lý tưởng.</p>
+                            </div>
+                            <div class="para r-effect">
+                                <h2>Cơ sở tham khảo</h2>
+                                <p>Một trong những mục tiêu quan trọng khác của StarBlue là mang lại nhiều tri thức bổ ích
+                                cho cộng đồng. Điều này nhằm giúp cộng động có một nguồn tri thức tham khảo từ tư duy,
+                                kiến thức cho đến đánh giá,...</p>
+                            </div>
                         </div>
                     </div>
                     <div class="sub-container">
-                        <img src="" alt="img">
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_1lgAe9.json"  background="transparent"  speed="0.5"  style="display: flex; align-items: center; width: 100%; height: 100%;"  loop  autoplay></lottie-player>
                     </div>
                 </div>
             </div>
@@ -71,25 +87,226 @@
                 <h1>Lãnh đạo</h1>
                 <h3>Những con người nhiệt huyết</h3>
                 <div class="list">
-                    <div class="list-item box box-effects-2">
+                    <div class="list-item box-full r-effect">
                         <img src="images/avatars/xoaicc.jpg" alt="avatar">
                         <h3>Xoai CC</h3>
-                        <p>Định hướng, xây dựng, tuyển mộ</p>
-                    </div>
-                    <div class="list-item box box-effects-2">
-                        <img src="images/avatars/xoaicc.jpg" alt="avatar">
-                        <h3>Xoai CC</h3>
-                        <p>Định hướng, xây dựng</p>
+                        <div class="scroll-text">
+                            <div class="scroll-text__inner">
+                                <p>Người sáng lập, quản lý, lập trình viên</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="networks" class="section">
                 <h1>Mạng lưới</h1>
                 <h3>Toàn bộ cộng đồng của StarBlue</h3>
-                <div class="">
+                <div class="sub-section">
                     <h2>Trang nhánh</h2>
-                    <div class="list">
-                        <div class="list-item"></div>
+                    <div class="over-list">
+                        <div class="list">
+                            <div id="web1" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>SBlog VN</h3>
+                                            <p>SBlog VN là trang Blog dành cho cộng đồng, nơi thành viên thỏa sức chia sẻ
+                                                và sáng tạo những câu chuyện thú vị. Các câu chuyện sẽ được chia thành
+                                                nhiều nhiều chuyên mục, mỗi chuyên mục lại có các chủ đề khác nhau.
+                                                Đến SBlog VN để trải nghiệm nhiều điều thú vị đang chờ đón bạn!</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://blog.starblue.one">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/sub-web-icons/sblog-icon.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="web2" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>SChat VN</h3>
+                                            <p>SChat VN là trang trò chuyện cho cộng đồng, nơi thành viên có thể tham
+                                            gia vào những nhóm chat theo sở thích và thỏa sức chia sẻ quan điểm cá nhân.
+                                            Đặc biệt SChat VN còn có những phòng hỗ trợ, tư vấn cá nhân dành cho những
+                                            người có nhu cầu. Còn chờ gì mà không tham gia không gian trò chuyện của
+                                            SChat VN.</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://chat.starblue.one">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/sub-web-icons/schat-icon.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="web3" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>SGuide VN</h3>
+                                            <p>SGuide VN là trang cẩm nang về kỹ năng, nơi cho phép thành viên chia sẻ
+                                            những bí quyết, kinh nghiệm về mọi mặt đời sống để giúp những người cần đến.
+                                            SGuide VN hứa hẹn sẽ đem lại những nội dung tham khảo hữu ích trong tương
+                                                lai. Nếu muốn đóng góp những giá trị thực tế, hãy đến với SGuide VN.</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://guide.starblue.one">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/sub-web-icons/sguide-icon.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="web4" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>SLib VN</h3>
+                                            <p>SLib VN là trang thư viện sách hay, nơi thành viên có thể đóng góp những
+                                            cuốn sách giá trị cho bạn đọc. Với nhiều đầu sách theo các chủ đề phong phú,
+                                            SLib VN sẽ là một không gian tuyệt vời cho những người yêu sách. Nghé thăm
+                                            SLib VN ngay để không bỏ lỡ những cuốn sách hay bạn nhé!</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://lib.starblue.one">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/sub-web-icons/slib-icon.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="web5" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>SLink VN</h3>
+                                            <p>SLink VN là trang chia sẻ liên kết cộng đồng, nơi thành viên có thể tìm
+                                                kiếm hoặc để lại những liên kết giá trị cho cộng đồng. Không những vậy,
+                                            thành viên còn có thể bình chọn, xếp hạng những liên kết mang lại nhiều giá
+                                            trị. Đến SLink VN ngay thôi nào!</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://link.starblue.one">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/sub-web-icons/slink-icon.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="web6" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>SMag VN</h3>
+                                            <p>SMag VN là trang tạp chí về kiến thức cuộc sống, nơi thành viên có thể
+                                            vận dụng khả năng viết lách với học thuật để tạo nên những bài viết bổ ích
+                                                cho cộng đồng. SMag VN với nhiều chủ đề thú vị hứa hẹn sẽ là cổng thông
+                                                tin giá trị để tham khảo. Nghé thăm SMag VN ngay thôi nào!</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://mag.starblue.one">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/sub-web-icons/smag-icon.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="web7" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>SRum VN</h3>
+                                            <p>SRum VN là diễn đàn về tư duy, nơi cho phép thành viên tranh luận, tìm
+                                            hướng giải quyết về các vấn đề trong đời sống. SRum VN bao quát các khía
+                                            cạnh trong cuộc sống với đầy đủ các chuyên mục giúp thành viên có cái nhìn
+                                            trải dộng và khách quan nhất. Tham gia SRum VN ngay để cùng nâng cấp tư
+                                            duy bản thân nào!</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://forum.starblue.one">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/sub-web-icons/srum-icon.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="web8" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>SWall VN</h3>
+                                            <p>SWall VN là tường ảnh cộng đồng, nơi thành viên có thể thỏa thích đăng
+                                            những bức hình đẹp đồng thời lan tỏa nét đẹp Việt trong mắt bạn bè quốc tế.
+                                            Nếu bạn là một người yêu thích chụp hình, nhiếp ảnh thì đừng bỏ qua không
+                                            gian thú vị này nhé!</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://wall.starblue.one">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/sub-web-icons/swall-icon.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="web-pag" class="pagination">
+                        <a href="#web1" class="r-effect active-pag">1</a>
+                        <a href="#web2" class="r-effect">2</a>
+                        <a href="#web3" class="r-effect">3</a>
+                        <a href="#web4" class="r-effect">4</a>
+                        <a href="#web5" class="r-effect">5</a>
+                        <a href="#web6" class="r-effect">6</a>
+                        <a href="#web7" class="r-effect">7</a>
+                        <a href="#web8" class="r-effect">8</a>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <h2>Kênh YouTube</h2>
+                    <div class="over-list center-box">
+                        <div class="list">
+                            <div id="chan1" class="list-item box-center-larger r-effect">
+                                <div class="r-container">
+                                    <div class="sub-container">
+                                        <div class="details">
+                                            <h3>Thư Viện Nhạc</h3>
+                                            <p>Thư Viện Nhạc là kênh YouTube chuyên tổng hợp lại những danh sách phát
+                                            nhạc hay và chất lượng. Với nhiều chủ đề liên tục cập nhật, Thư Viện Nhạc
+                                            hứa hẹn trở thành không gian nghe nhạc lý tưởng cho người yêu nhạc.</p>
+                                        </div>
+                                        <a class="btn r-effect" href="https://www.youtube.com/@thuviennhac">
+                                            <span class="btn-icon"><i class="uil uil-location-arrow"></i></span>
+                                            <span class="btn-text">Truy cập</span>
+                                        </a>
+                                    </div>
+                                    <div class="sub-container">
+                                        <img class="r-effect" src="images/channel-icons/thu-vien-nhac.jpg" alt="Thư Viện Nhạc" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="channel-pag" class="pagination">
+                        <a href="#chan1" class="active-pag r-effect">1</a>
                     </div>
                 </div>
             </div>
@@ -97,10 +314,10 @@
                 <h1>Thống kê</h1>
                 <h3>Những con số biết nói</h3>
                 <div class="list">
-                    <div class="list-item box-effects-2">
+                    <div class="list-item box-center-small r-effect">
                         <i class="uil uil-users-alt"></i>
-                        <h2>0</h2>
-                        <h3>Thành viên</h3>
+                        <h2>10+</h2>
+                        <h3>thành viên</h3>
                     </div>
                 </div>
             </div>
@@ -108,11 +325,25 @@
                 <h1>Ủng hộ</h1>
                 <h3>Chung tay xây dựng cộng đồng</h3>
                 <div class="list">
-                    <div class="list-item box-effects-2">
+                    <div class="list-item box-center-small r-effect">
                         <h2>MoMo</h2>
-                        <a class="btn">
-                            <span class="btn-icon"><i class="uil uil-wifi"></i></span>
-                            <span class="btn-text">Kết nối</span>
+                        <a class="btn r-effect">
+                            <span class="btn-icon"><i class="uil uil-gift"></i></span>
+                            <span class="btn-text">Ủng hộ</span>
+                        </a>
+                    </div>
+                    <div class="list-item box-center-small r-effect">
+                        <h2>Paypal</h2>
+                        <a class="btn r-effect">
+                            <span class="btn-icon"><i class="uil uil-gift"></i></span>
+                            <span class="btn-text">Ủng hộ</span>
+                        </a>
+                    </div>
+                    <div class="list-item box-center-small r-effect">
+                        <h2>Ngân hàng</h2>
+                        <a class="btn r-effect">
+                            <span class="btn-icon"><i class="uil uil-gift"></i></span>
+                            <span class="btn-text">Ủng hộ</span>
                         </a>
                     </div>
                 </div>
@@ -120,43 +351,43 @@
             <div id="connect" class="section">
                 <h1>Kết nối</h1>
                 <h3>Kết nối tới chúng mình</h3>
-                <div class="zones">
-                    <div class="zone-3 box-effects-2">
+                <div class="list">
+                    <div class="list-item box-center-large r-effect">
                         <h2>Mạng xã hội</h2>
                         <div class="list">
                             <div class="list-item">
-                                <a class="btn">
+                                <a class="btn r-effect">
                                     <i style="color: dodgerblue" class="uil uil-facebook"></i>
                                 </a>
                             </div>
                             <div class="list-item">
-                                <a class="btn">
-                                    <span class="btn-icon" style="background-color: dodgerblue"><i class="uil uil-youtube"></i></span>
+                                <a class="btn r-effect">
+                                    <i style="color: red" class="uil uil-youtube"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="zone-3 zone-3-center box-effects-2">
+                    <div class="list-item box-center-large r-effect">
                         <h2>Công việc</h2>
                         <div class="list">
                             <div class="list-item">
-                                <a class="btn">
-                                    <span class="btn-icon" style="background-color: dodgerblue"><i class="uil uil-github"></i></span>
+                                <a class="btn r-effect">
+                                    <i style="color: darkgrey" class="uil uil-github"></i>
                                 </a>
                             </div>
                             <div class="list-item">
-                                <a class="btn">
-                                    <span class="btn-icon" style="background-color: dodgerblue"><i class="uil uil-discord"></i></span>
+                                <a class="btn r-effect">
+                                    <i style="color: blueviolet" class="uil uil-discord"></i>
                                 </a>
                             </div>
                             <div class="list-item">
-                                <a class="btn">
-                                    <span class="btn-icon" style="background-color: dodgerblue"><i class="uil uil-facebook-messenger"></i></span>
+                                <a class="btn r-effect">
+                                    <i style="color: dodgerblue" class="uil uil-facebook-messenger"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="zone-3 box-effects-2">
+                    <div class="list-item box-center-large r-effect">
                         <h2>Liên hệ</h2>
                         <div class="list">
                             <ul>
@@ -168,10 +399,13 @@
                     </div>
                 </div>
             </div>
+            <div id="copyright">
+                <p>@2023 by StarBlue Community. All Rights Reserved</p>
+            </div>
         </div>
     </div>
 </div>
 <script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>

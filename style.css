@@ -9,7 +9,7 @@
 
 html {
     font-family: "Nunito Sans", serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 body {
@@ -17,16 +17,19 @@ body {
 }
 
 h1 {
+    margin: .7% 0;
     font-weight: 800;
     font-size: 1.8rem;
 }
 
 h2 {
+    margin: .4% 0;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
 h3 {
+    margin: .2% 0;
     font-weight: 400;
     font-size: 1.2rem;
 }
@@ -38,6 +41,16 @@ h1, h2, h3 {
 p {
     font-weight: 300;
     font-size: 1rem;
+}
+
+ul {
+    text-align: left !important;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 *::-webkit-scrollbar, *::-webkit-scrollbar-track, *::-webkit-scrollbar-button, div::-webkit-scrollbar {
@@ -89,6 +102,7 @@ p {
 }
 
 .r-container {
+    margin: 0 5px;
     display: flex;
 }
 
@@ -104,52 +118,40 @@ p {
 }
 
 .content {
+    padding: 5px;
     width: 80%;
     background-color: rgba(0,0,0,0.25);
     color: white;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .section {
-    margin: 1% 5px;
+    margin: 10% 0;
 }
 
-.zones {
+.sub-section {
+    margin: 3% 0;
+}
+
+.center-box {
     display: flex;
     justify-content: center;
-}
-
-.zone-3 {
-    width: 33%;
-    min-height: 200px;
-    padding-top: 50px;
-}
-
-.zone-3-center {
-    margin: 0 .5%;
 }
 
 /*Common styles: elements*/
 .btn {
     margin: 5px;
-    height: 30px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(15px);
-    transition-duration: 0.3s;
     cursor: pointer;
 }
 
-.btn:hover {
+.active-nav {
     box-shadow: .3rem .6rem .6rem rgba(10,10,10,0.25);
-    transform: translate(-.6rem, -.2rem) scale(1.05);
-    transition-duration: 0.3s;
-}
-
-.active-btn {
-    box-shadow: .3rem .6rem .6rem rgba(10,10,10,0.25);
-    transform: translate(-.3rem, -.3rem);
+    transform: translate(-.3rem, -.6rem);
 }
 
 .btn-icon {
@@ -157,22 +159,48 @@ p {
     height: 20px;
     position: absolute;
     left: 5%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .list {
-    display: flex;
     margin-top: 10px;
+    display: flex;
     justify-content: center;
 }
 
 .list-item {
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
-.box {
+.box-center-small {
     width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-center-large {
+    width: 30%;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-center-larger {
+    width: 800px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-full {
+    width: 20%;
     padding: 5px;
 }
 
@@ -180,58 +208,198 @@ p {
     text-align: center;
     height: 6%;
 }
+.logo img {
+    width: 50%;
+}
+
 
 .nav-bar {
     display: flex;
     flex-direction: column;
 }
 
-.hero {
+.nav-bar a {
+    margin-top: 10px;
+}
+
+.para {
+    margin: 3% 0;
+    padding: 5%;
+}
+
+.details {
+    text-align: center;
+}
+
+.pagination {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
     margin: 5px;
-    height: 300px;
+    color: inherit;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active-pag {
+    background-color: rgba(10,10,10,0.25);
+    pointer-events: none;
+}
+
+.scroll-text {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scroll-text__inner {
+    display: inline-block;
+    animation: scroll-text 10s linear infinite;
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
     backdrop-filter: blur(15px);
 }
 
-.hero:hover {
-    transform: scale(1.1);
+.slider__inner {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    animation: slide 15s linear infinite alternate;
 }
 
-.hero img {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    opacity: 75%;
+.slider__item {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
 }
 
 /*Common styles: effects*/
-.box-effects-1 {
+.c-effect {
     backdrop-filter: blur(10px);
     box-shadow: .3rem .6rem .6rem rgba(10,10,10,0.25);
 }
 
-.box-effects-2 {
+.l-effect {
     backdrop-filter: blur(10px);
     transition-duration: 0.3s;
 }
 
-.box-effects-2:hover {
-    box-shadow: -.3rem .6rem .6rem rgba(245,245,245,0.25);
-    transform: translate(.6rem, -.8rem) scale(1.01);
+.l-effect:hover {
+    box-shadow: .3rem .6rem .6rem rgba(10,10,10,0.25);
+    transform: translate(-.3rem, -.6rem) scale(1.01);
+    transition-duration: .3s;
+}
+
+.r-effect {
+    backdrop-filter: blur(10px);
     transition-duration: 0.3s;
 }
 
+.r-effect:hover {
+    box-shadow: -.3rem .6rem .6rem rgba(245,245,245,0.25);
+    transform: translate(.3rem, -.6rem) scale(1.01);
+    transition-duration: .3s;
+}
+
+/*Common styles: animation*/
+@keyframes scroll-text {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    45% {
+        transform: translateX(0);
+    }
+    55% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 /*Separate styles*/
+#orientation h2 {
+    text-align: left;
+}
+
 #leaders img {
     width: 100%;
     opacity: 75%;
 }
 
+#networks .over-list {
+    overflow-x: auto;
+}
+
+#networks .over-list::-webkit-scrollbar {
+    display: none;
+}
+
+#networks .list {
+    width: fit-content;
+}
+
+#networks .sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#networks .btn {
+    position: absolute;
+    margin-left: 50%;
+    bottom: 0;
+    width: 25%;
+    background-color: rgba(10,10,10,0.25);
+}
+
+#networks img {
+    width: 30%;
+}
+
+#statistics i {
+    font-size: 2rem;
+}
+
+#statistics h2 {
+    font-size: 3rem;
+}
+
+#support .btn {
+    position: absolute;
+    width: 95%;
+    bottom: 0;
+    background-color: rgba(10,10,10,0.25);
+}
+
 #connect .btn {
     width: 50px;
     height: 50px;
+    background-color: rgba(10,10,10,0.25);
 }
 
 #connect i {
     font-size: 2rem;
+}
+
+#copyright p {
+    text-align: center;
+    opacity: 75%;
 }

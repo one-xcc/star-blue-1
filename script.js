@@ -27,12 +27,12 @@ function disableCopy() {
         e.preventDefault();
         e.stopPropagation();
     }
-    // document.onkeydown = function(e) {
-    //     if (e.keyCode === 123) {
-    //         e.preventDefault();
-    //         return false;
-    //     }
-    // };
+    document.onkeydown = function(e) {
+        if (e.keyCode === 123) {
+            e.preventDefault();
+            return false;
+        }
+    };
     document.body.style.userSelect = "none";
     document.body.style.msUserSelect = "none";
     document.body.style.mozUserSelect = "none";
@@ -40,3 +40,27 @@ function disableCopy() {
 }
 
 disableCopy();
+
+const webPag = document.querySelector("#web-pag");
+const webPagItems = webPag.querySelectorAll("a");
+
+webPagItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        webPagItems.forEach((item) => {
+            item.classList.remove("active-pag");
+        });
+        item.classList.add("active-pag")
+    })
+})
+
+const navBar = document.querySelector(".nav-bar");
+const navBarItems = navBar.querySelectorAll("a");
+
+navBarItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        navBarItems.forEach((item) => {
+            item.classList.remove("active-nav");
+        });
+        item.classList.add("active-nav")
+    })
+})
