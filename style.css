@@ -4,7 +4,6 @@
 
 * {
     margin: 0;
-    z-index: 1;
 }
 
 html {
@@ -43,14 +42,15 @@ p {
     font-size: 1rem;
 }
 
-ul {
-    text-align: left !important;
-    padding: 0;
-}
-
 a {
     color: inherit;
     text-decoration: none;
+    z-index: 1;
+}
+
+ul {
+    text-align: left !important;
+    padding: 0;
 }
 
 *::-webkit-scrollbar, *::-webkit-scrollbar-track, *::-webkit-scrollbar-button, div::-webkit-scrollbar {
@@ -78,7 +78,6 @@ a {
     background-image: url("https://img3.thuthuatphanmem.vn/uploads/2019/10/10/background-hinh-dong_032850499.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 0;
 }
 
 .wrapper::after {
@@ -92,17 +91,16 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 75%;
-    z-index: 1;
+    z-index: 2;
 }
 
-.container {
+.c-container {
     width: 90%;
     height: 90%;
     display: flex;
 }
 
 .r-container {
-    margin: 0 5px;
     display: flex;
 }
 
@@ -111,19 +109,24 @@ a {
     min-height: 300px;
 }
 
-.side-bar {
+.side-bar-hidden {
+    display: none;
+}
+
+.side-bar-show {
     width: 20%;
     height: 100%;
     background-color: rgba(245,245,245,0.25);
 }
 
-.content {
-    padding: 5px;
+.content-full {
+    width: 100%;
+    transition: width .3s ease-out;
+}
+
+.content-part {
     width: 80%;
-    background-color: rgba(0,0,0,0.25);
-    color: white;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    transition: width .3s ease-out;
 }
 
 .section {
@@ -149,11 +152,6 @@ a {
     cursor: pointer;
 }
 
-.active-nav {
-    box-shadow: .3rem .6rem .6rem rgba(10,10,10,0.25);
-    transform: translate(-.3rem, -.6rem);
-}
-
 .btn-icon {
     width: 20px;
     height: 20px;
@@ -172,6 +170,27 @@ a {
 
 .list-item {
     margin-right: 12px;
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(15px);
+}
+
+.slider__inner {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    animation: slide 15s linear infinite alternate;
+}
+
+.slider__item {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
 }
 
 .box-center-small {
@@ -212,7 +231,6 @@ a {
     width: 50%;
 }
 
-
 .nav-bar {
     display: flex;
     flex-direction: column;
@@ -220,6 +238,11 @@ a {
 
 .nav-bar a {
     margin-top: 10px;
+}
+
+.active-nav {
+    background-color: rgba(245,245,245,0.25);
+    pointer-events: none;
 }
 
 .para {
@@ -260,27 +283,6 @@ a {
     animation: scroll-text 10s linear infinite;
 }
 
-.slider {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    backdrop-filter: blur(15px);
-}
-
-.slider__inner {
-    display: flex;
-    width: 200%;
-    height: 100%;
-    animation: slide 15s linear infinite alternate;
-}
-
-.slider__item {
-    width: 50%;
-    background-size: cover;
-    background-position: center;
-}
-
 /*Common styles: effects*/
 .c-effect {
     backdrop-filter: blur(10px);
@@ -310,15 +312,6 @@ a {
 }
 
 /*Common styles: animation*/
-@keyframes scroll-text {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -334,7 +327,24 @@ a {
     }
 }
 
+@keyframes scroll-text {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 /*Separate styles*/
+#content {
+    padding: 5px;
+    background-color: rgba(0,0,0,0.25);
+    color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 #orientation h2 {
     text-align: left;
 }
